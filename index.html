@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+    <div class="container-name-score">
+        <p class="Game-Name">
+            ROCK <br> PAPER <br> SCISSORS
+        </p>
+        <div class="score-board">
+            <div class="user-score">
+                <p>YOUR <br> SCORE</p>
+                <div id="user-score" class="score">0</div>
+            </div>
+            <div class="computer-score">
+                <p>COMPUTER SCORE</p>
+                <div id="computer-score" class="score">0</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- GAME CONTAINER -->
+
+    <div class="game-container">
+
+        <div class="choices">
+            <button id="rock" class="choice">
+                <img src="./img/stone.png" alt="">
+            </button>
+            <button id="scissors" class="choice">
+                <img src="./img/scissor.png" alt="">
+            </button>
+            <button id="paper" class="choice">
+                <img src="./img/paper.png" alt="">
+            </button>
+            <div class="line1">1</div>
+            <div class="line2">2</div>
+            <div class="line3">3</div>
+        </div>
+    </div>
+    <button id="rules-button" class="rules-button">Rules</button>
+    <div id="rules-box" class="rules-box">
+        <button id="close-rules" class="close-rules">X</button>
+        <h2>Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off “rock, paper, scissors, shoot” or just “rock, paper,
+                scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+
+    </div>
+
+    <!-- WINNING WINDOW -->
+
+    <div class="winnerWindow">
+        <div class="youPicked" id="winnerWindowYouPicked">
+            <div style="color: white; text-align: center; top: 50px;">You Picked</div>
+
+        </div>
+        <div class="winnerWindowmiddleDisplay">
+            <b>YOU WIN</b> <br> AGAINST PC <br>
+            <button class="go-gameContainer" id="WinBtn">Play Again</button>
+        </div>
+        <div class="pcPicked" id="winnerWindowPcPicked">
+            <div style="color: white; text-align: center; top: 50px;">PC Picked</div>
+
+        </div>
+        <div class="winnerBottomButtons">
+
+            
+            <button id="next-button" class="next-button">Next</button>
+
+        </div>
+    </div>
+
+    <!-- LOOSING WINDOW -->
+
+    <div class="loosingWindow">
+        <div class="youPicked" id="loosingWindowYouPicked">
+            <div style="color: white; text-align: center; top: 50px;">You Picked</div>
+
+        </div>
+        <div class="loosingWindowmiddleDisplay">
+            <b>YOU LOST</b> <br> AGAINST PC <br>
+            <button class="go-gameContainer" id="LooseBtn">Play Again</button>
+        </div>
+        <div class="pcPicked" id="loosingWindowPcPicked">
+            <div style="color: white; text-align: center; top: 50px;">PC Picked</div>
+
+        </div>
+        
+    </div>
+
+    <!-- TIE WINDOW -->
+
+    <div class="tieWindow">
+        <div class="youPicked" id="tieWindowYouPicked">
+            <div style="color: white; text-align: center; top: 50px;">You Picked</div>
+
+        </div>
+
+        <div class="TieWindowmiddleDisplay">
+            <b>TIE UP</b> <br>
+            <button class="go-gameContainer" id="TieBtn">Replay</button>
+        </div>
+
+        <div class="pcPicked" id="tieWindowPcPicked">
+            <div style="color: white; text-align: center; top: 50px;">PC Picked</div>
+
+        </div>
+    </div>
+
+    <!-- HURRAHH PAGE -->
+
+    <div class="Hurrah">
+        <div class="celebration">
+            <img src="./img/Vector.png" alt="trophy" class="celebImage trophy">
+            <img src="./img/Group 5.png" alt="stars" class="celebImage stars">
+        </div>
+        &nbsp;
+        &nbsp;
+        &nbsp;
+
+        <x> HURRAY!! </x>
+        YOU WON THE GAME
+       
+        <button class="go-gameContainer" id="celebPlayAgainBtn">PLAY AGAIN</button>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
